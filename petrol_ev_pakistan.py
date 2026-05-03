@@ -186,7 +186,7 @@ else:
 p_co2_m     = (dist_monthly / p_mileage) * 2.31
 e_co2_m     = (dist_monthly * wh_per_km / 1000) * 0.45
 co2_saved_m = max(0, p_co2_m - e_co2_m)
-trees_m     = co2_saved_m * (CO2_PER_TREE_YR / 12)
+trees_m     = co2_saved_m / (CO2_PER_TREE_YR)
 trees_yr    = co2_saved_m * 12 / CO2_PER_TREE_YR
 trees_total = co2_saved_m * 12 * years / CO2_PER_TREE_YR
 
